@@ -1,0 +1,20 @@
+# Magento 2 .gitignore
+
+# Ignore var directory (cache, log, session, generated files)
+var/*
+!/var/.htaccess
+
+# Ignore vendor directory
+/vendor/
+
+# Ignore Magento files
+/app/etc/env.php
+/app/etc/di.xml
+
+# Ignore media files
+/media/*
+!/media/.htaccess
+
+# Ignore generated code and static files
+/pub/static/*
+!/pub/static/.htaccess
