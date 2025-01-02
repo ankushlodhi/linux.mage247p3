@@ -13,7 +13,10 @@ $welcomeMessage = $block->getWelcome();
 ?>
 <?php if ($block->getShowPart() == 'welcome'): ?>
     <a href="https://github.com/ankushlodhi/linux.mage247p3">Github</a>
-<li>New 05:45</li>
+<li><?php 
+    $mydate=getdate(date("U"));
+    echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
+    ?></li>
     <li class="greet welcome jenkins-test" data-bind="scope: 'customer'">
         <!-- ko if: customer().fullname  -->
         <span class="logged-in"
